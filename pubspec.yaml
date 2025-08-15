@@ -1,0 +1,88 @@
+name: homesnap_pro
+description: A new Flutter project.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:       # 🚨 CRITICAL: Required for every Flutter project - DO NOT REMOVE
+    sdk: flutter # 🚨 CRITICAL: Required for every Flutter project - DO NOT REMOVE
+  
+  # 🚨 CRITICAL: Core UI and responsive design - DO NOT REMOVE OR MODIFY
+  sizer: ^3.0.5              # Updated to latest compatible version
+  flutter_svg: ^2.2.0        # Updated to latest compatible version
+  google_fonts: ^6.2.1       # Updated to latest compatible version
+  shared_preferences: ^2.5.3 # Updated to latest compatible version
+  web: ^1.1.1
+  
+  # Feature dependencies - Updated to working versions
+  cached_network_image: ^3.4.1
+  connectivity_plus: ^6.1.4
+  dio: ^5.8.0+1
+  fluttertoast: ^8.2.12
+  fl_chart: ^1.0.0            # Updated to compatible version
+  camera: ^0.11.2
+  permission_handler: ^12.0.1
+  gal: ^2.3.2
+  photo_manager: ^3.7.1
+  
+  # Supabase integration
+  supabase_flutter: ^2.9.1
+  supabase: ^2.8.0
+  
+  # File operations and utility
+  file_picker: ^10.2.0
+  path_provider: ^2.1.5
+  universal_html: ^2.2.4
+  record: ^6.0.0
+  crypto: ^3.0.6
+  
+  # Tutorial and video functionality
+  video_player: ^2.10.0
+  url_launcher: ^6.3.2
+  
+  # OpenAI and Chat Integration
+  http: ^1.4.0
+  stream_transform: ^2.1.1
+  dash_chat_2: ^0.0.21
+
+  # Google Places and Geocoding
+  google_places_flutter: ^2.1.0
+  geocoding: ^4.0.0
+  geolocator: ^14.0.2
+
+  # Payment processing with Stripe
+
+  # Additional camera and photo management
+
+  # Push notifications
+  firebase_core: ^4.0.0
+  firebase_messaging: ^16.0.0
+  flutter_local_notifications: ^19.4.0
+
+  # Additional features for export-ready app - REMOVED INCOMPATIBLE PACKAGE
+  app_settings: ^6.1.1
+  # device_info_plus: removed due to SDK incompatibility
+  package_info_plus: ^8.3.0
+  flutter_stripe: ^11.5.0
+
+dev_dependencies:
+  flutter_test:    # 🚨 CRITICAL: Required for Flutter project testing - DO NOT REMOVE
+    sdk: flutter   # 🚨 CRITICAL: Required for Flutter project testing - DO NOT REMOVE
+  flutter_lints: ^5.0.0 # 🚨 CRITICAL: Required for code quality - DO NOT REMOVE
+
+flutter:
+  uses-material-design: true # 🚨 CRITICAL: Required for Material icon font - DO NOT REMOVE
+  assets:
+    - assets/
+    - assets/images/
+  # 🚨 CRITICAL ASSET MANAGEMENT RULES:
+  # - DO NOT ADD NEW ASSET DIRECTORIES (assets/svg/, assets/icons/, etc.)
+  # - ONLY USE EXISTING AND ITEMS AVAILABLE IN THE DIRECTORIES LISTED ABOVE (assets/, assets/images/)
+  
+  # 🚨 CRITICAL FONTS RULE: 
+  # - THIS PROJECT USES GOOGLE FONTS INSTEAD OF LOCAL FONTS
+  # - DO NOT ADD ANY LOCAL FONTS SECTION OR FONT FILES
+  # - USE google_fonts PACKAGE TO LOAD ALL FONTS INCLUDING Inter, Roboto, Lato, etc.
